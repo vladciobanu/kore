@@ -2,6 +2,6 @@ image: ubuntu
 
 install:
 - curl -sSL https://get.haskellstack.org/ | sh
-- apt install z3
 - cd projects/kore
 - stack build
+- sudo apt install z3
