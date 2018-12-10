@@ -3,5 +3,5 @@ image: ubuntu
 install:
 - curl -sSL https://get.haskellstack.org/ | sh
 - cd /home/appveyor/projects/kore
-- stack build
+- stack build --haddock --no-haddock-deps --coverage --bench --no-run-benchmarks --test --no-run-tests --pedantic 
 - sudo apt install z3
