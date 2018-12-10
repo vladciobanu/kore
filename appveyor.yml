@@ -1,0 +1,8 @@
+image: ubuntu
+
+install:
+- stack --version
+- z3 --version
+- git --version
+- ghc --version
+- cabal-install --version
