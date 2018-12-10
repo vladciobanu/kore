@@ -1,5 +1,8 @@
 image: ubuntu
 
+cache:
+- .stack-work -> stack.yml
+
 install:
 - curl -sSL https://get.haskellstack.org/ | sh
 - cd /home/appveyor/projects/kore
