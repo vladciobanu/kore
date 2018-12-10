@@ -1,8 +1,6 @@
 image: ubuntu
 
 install:
-- stack --version
-- z3 --version
+- curl -sSL https://get.haskellstack.org/ | sh
 - git --version
-- ghc --version
-- cabal-install --version
+- z3 --version
