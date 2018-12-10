@@ -7,7 +7,8 @@ install:
 - curl -sSL https://get.haskellstack.org/ | sh
 - cd /home/appveyor/projects/kore
 - stack build --haddock --no-haddock-deps --coverage --bench --no-run-benchmarks --test --no-run-tests --pedantic
-- sudo apt install z3
+- sudo apt-get install build-essential m4 openjdk-8-jdk libgmp-dev libmpfr-dev pkg-config flex z3 libz3-dev maven opam python3
+
 
 test_script:
 - cd /home/appveyor/projects/kore/src/main/k/working

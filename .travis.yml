@@ -21,6 +21,8 @@ install:
  - unset CC
  - export PATH=$HOME/.local/bin:/opt/ghc/$GHCVER/bin:$PATH
  - ./.travis/install-stack.sh
+ - sudo apt-get install build-essential m4 openjdk-8-jdk libgmp-dev libmpfr-dev pkg-config flex z3 libz3-dev maven opam python3
+
 
 script:
  - echo "$(ghc --version) [$(ghc --print-project-git-commit-id 2> /dev/null || echo '?')]"
@@ -29,5 +31,8 @@ script:
    # Run tests
    stack build --haddock --no-haddock-deps --coverage --bench --no-run-benchmarks --test --no-run-tests --pedantic
    set +ex
+ - |
+   cd /home/appveyor/projects/kore/src/main/k/working
+   make test-k
 
 after_success:
