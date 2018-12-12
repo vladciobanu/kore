@@ -1,6 +1,7 @@
 # Adapted from https://github.com/commercialhaskell/stack
 language: java
 sudo: false
+dist: bionic
 
 cache:
     directories:
