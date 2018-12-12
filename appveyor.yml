@@ -3,6 +3,7 @@ image: ubuntu
 
 cache:
 - .stack-work -> stack.yaml
+- /home/appveyor/.stack -> stack.yaml
 
 install:
 - curl -sSL https://get.haskellstack.org/ | sh
