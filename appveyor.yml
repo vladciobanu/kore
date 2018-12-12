@@ -1,7 +1,7 @@
 image: ubuntu
 
 cache:
-- .stack-work -> stack.yml
+- .stack-work -> stack.yaml
 
 install:
 - curl -sSL https://get.haskellstack.org/ | sh
@@ -12,6 +12,6 @@ install:
 
 test_script:
 - cd /home/appveyor/projects/kore/src/main/k/working
-- make test-k
+# - make test-k
 
 build: off
