@@ -15,6 +15,6 @@ install:
 
 test_script:
 - cd /home/appveyor/projects/kore/src/main/k/working
-# - make test-k
+- make test-k
 
 build: off
