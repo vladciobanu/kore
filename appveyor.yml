@@ -1,3 +1,4 @@
+# Bionic is the default
 image: ubuntu
 
 cache:
