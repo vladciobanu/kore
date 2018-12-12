@@ -1,6 +1,7 @@
 # Bionic is the default
 image: ubuntu
 
+# Cache local and "global" dependencies.
 cache:
 - .stack-work -> stack.yaml
 - /home/appveyor/.stack -> stack.yaml
